@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF6"/>
+      <stop offset="100%" stop-color="#EAE3D4"/>
+    </linearGradient>
+    <linearGradient id="sGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA771C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sBg)"/>
+  
+  <rect x="100" y="70" width="600" height="360" rx="20" fill="#FFFFFF" stroke="#E2DACD" stroke-width="2"/>
+
+  <!-- Sports Elements: Cricket bat & ball, medals, football, badminton in warm beige / academic palette -->
+  <g transform="translate(250, 110)">
+    <!-- Shield / Laurel of sportsmanship -->
+    <circle cx="150" cy="100" r="85" fill="#F8F3EA" stroke="#C59B27" stroke-width="2.5" stroke-dasharray="6 3"/>
+
+    <!-- Crossed Cricket Bats -->
+    <g transform="translate(150, 95) rotate(-35)">
+      <rect x="-8" y="-70" width="16" height="120" rx="4" fill="#B38959" stroke="#6F5233" stroke-width="2"/>
+      <rect x="-4" y="-95" width="8" height="28" rx="2" fill="#8A282B"/>
+    </g>
+    <g transform="translate(150, 95) rotate(35)">
+      <rect x="-8" y="-70" width="16" height="120" rx="4" fill="#B38959" stroke="#6F5233" stroke-width="2"/>
+      <rect x="-4" y="-95" width="8" height="28" rx="2" fill="#8A282B"/>
+    </g>
+
+    <!-- Cricket Ball -->
+    <circle cx="150" cy="115" r="22" fill="#8A282B" stroke="#5E1619" stroke-width="2"/>
+    <path d="M 136,102 C 144,115 144,125 136,128" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="2 2"/>
+
+    <!-- Gold Medal in front -->
+    <g transform="translate(195, 145)">
+      <polygon points="15,0 5,30 25,30" fill="#8A282B"/>
+      <circle cx="15" cy="40" r="16" fill="url(#sGold)" stroke="#7A5812" stroke-width="1.5"/>
+      <text x="15" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">1</text>
+    </g>
+  </g>
+
+  <!-- Title Bottom Banner -->
+  <text x="400" y="365" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="800" fill="#2C2724" text-anchor="middle">
+    Annual Departmental Sports Meet
+  </text>
+  <text x="400" y="392" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="500" fill="#786B60" text-anchor="middle">
+    Cricket League, Chess Championships & Athletics • Godavari Sports Complex
+  </text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF6"/>
+      <stop offset="100%" stop-color="#EAE3D4"/>
+    </linearGradient>
+    <linearGradient id="aiGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C59B27"/>
+      <stop offset="100%" stop-color="#8A282B"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#aiBg)"/>
+  
+  <rect x="100" y="70" width="600" height="360" rx="20" fill="#FFFFFF" stroke="#E2DACD" stroke-width="2"/>
+
+  <!-- Neural Network & Human Wisdom diagram in warm institutional beige/bronze/maroon -->
+  <g transform="translate(240, 110)">
+    <!-- Node connections -->
+    <line x1="80" y1="60" x2="180" y2="40" stroke="#D1C3B2" stroke-width="2"/>
+    <line x1="80" y1="60" x2="180" y2="100" stroke="#D1C3B2" stroke-width="2"/>
+    <line x1="80" y1="120" x2="180" y2="100" stroke="#D1C3B2" stroke-width="2"/>
+    <line x1="80" y1="120" x2="180" y2="160" stroke="#D1C3B2" stroke-width="2"/>
+    <line x1="180" y1="40" x2="260" y2="80" stroke="#C59B27" stroke-width="2.5"/>
+    <line x1="180" y1="100" x2="260" y2="80" stroke="#8A282B" stroke-width="2.5"/>
+    <line x1="180" y1="160" x2="260" y2="120" stroke="#C59B27" stroke-width="2.5"/>
+    <line x1="180" y1="100" x2="260" y2="120" stroke="#8A282B" stroke-width="2.5"/>
+
+    <!-- Nodes Input -->
+    <circle cx="80" cy="60" r="16" fill="#EDE4D6" stroke="#8A282B" stroke-width="2"/>
+    <text x="80" y="64" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#8A282B" text-anchor="middle">X1</text>
+    <circle cx="80" cy="120" r="16" fill="#EDE4D6" stroke="#8A282B" stroke-width="2"/>
+    <text x="80" y="124" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#8A282B" text-anchor="middle">X2</text>
+
+    <!-- Hidden Nodes -->
+    <circle cx="180" cy="40" r="18" fill="#F4EDE0" stroke="#C59B27" stroke-width="2"/>
+    <circle cx="180" cy="100" r="18" fill="#F4EDE0" stroke="#8A282B" stroke-width="2"/>
+    <circle cx="180" cy="160" r="18" fill="#F4EDE0" stroke="#C59B27" stroke-width="2"/>
+
+    <!-- Output Nodes -->
+    <circle cx="260" cy="80" r="20" fill="#8A282B"/>
+    <text x="260" y="85" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">AI</text>
+    <circle cx="260" cy="120" r="20" fill="#C59B27"/>
+    <text x="260" y="125" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">ML</text>
+  </g>
+
+  <!-- Title Bottom Banner -->
+  <text x="400" y="365" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="800" fill="#2C2724" text-anchor="middle">
+    AI & Machine Learning Expert Seminar
+  </text>
+  <text x="400" y="392" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="500" fill="#786B60" text-anchor="middle">
+    Future of Large Language Models & Deep Neural Architectures • CESA
+  </text>
+</svg>

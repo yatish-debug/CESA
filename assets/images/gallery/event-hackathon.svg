@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF9F5"/>
+      <stop offset="100%" stop-color="#EDE6DA"/>
+    </linearGradient>
+    <linearGradient id="hCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8F4EE"/>
+    </linearGradient>
+    <linearGradient id="hMaroon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8A282B"/>
+      <stop offset="100%" stop-color="#6E1E23"/>
+    </linearGradient>
+    <linearGradient id="hGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA771C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#hBg)"/>
+  
+  <!-- Subtle Grid/Circuit Pattern in Beige -->
+  <g opacity="0.25" stroke="#C8BFAF" stroke-width="1.2">
+    <line x1="50" y1="50" x2="750" y2="50"/>
+    <line x1="50" y1="150" x2="750" y2="150"/>
+    <line x1="50" y1="250" x2="750" y2="250"/>
+    <line x1="50" y1="350" x2="750" y2="350"/>
+    <line x1="50" y1="450" x2="750" y2="450"/>
+    <line x1="150" y1="50" x2="150" y2="450"/>
+    <line x1="300" y1="50" x2="300" y2="450"/>
+    <line x1="450" y1="50" x2="450" y2="450"/>
+    <line x1="600" y1="50" x2="600" y2="450"/>
+  </g>
+
+  <!-- Center Event Showcase Card -->
+  <rect x="120" y="80" width="560" height="340" rx="16" fill="url(#hCard)" stroke="#DFD7CB" stroke-width="2"/>
+
+  <!-- Top Badge -->
+  <rect x="160" y="110" width="170" height="32" rx="16" fill="#8A282B"/>
+  <text x="245" y="131" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+    TECH-SYMPOSIUM 2024
+  </text>
+
+  <!-- Coding Laptops & Collaborative Team illustration in warm tones -->
+  <g transform="translate(180, 160)">
+    <!-- Desk Surface -->
+    <rect x="0" y="160" width="440" height="12" rx="6" fill="#D5CBBF"/>
+    
+    <!-- Central Laptop 1 -->
+    <rect x="140" y="50" width="160" height="105" rx="8" fill="#3D352E"/>
+    <rect x="148" y="58" width="144" height="88" rx="4" fill="#FAF6EE"/>
+    <!-- Code lines on screen -->
+    <line x1="160" y1="72" x2="220" y2="72" stroke="#8A282B" stroke-width="3" stroke-linecap="round"/>
+    <line x1="160" y1="84" x2="270" y2="84" stroke="#AA771C" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="175" y1="96" x2="260" y2="96" stroke="#4B6B48" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="175" y1="108" x2="240" y2="108" stroke="#7A6855" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="160" y1="120" x2="210" y2="120" stroke="#8A282B" stroke-width="3" stroke-linecap="round"/>
+    <!-- Laptop Base -->
+    <path d="M 120,155 L 320,155 L 305,162 L 135,162 Z" fill="#5A524A"/>
+
+    <!-- Left Trophy of Excellence -->
+    <g transform="translate(40, 60)">
+      <path d="M 15,20 L 45,20 L 40,55 Q 30,70 30,75 L 30,85 L 20,85 L 20,95 L 40,95 L 40,85 L 30,85 Q 30,70 20,55 Z" fill="url(#hGold)"/>
+      <path d="M 15,25 Q 5,25 5,38 Q 5,50 18,50" fill="none" stroke="url(#hGold)" stroke-width="3"/>
+      <path d="M 45,25 Q 55,25 55,38 Q 55,50 42,50" fill="none" stroke="url(#hGold)" stroke-width="3"/>
+      <rect x="15" y="95" width="30" height="10" rx="2" fill="#8A282B"/>
+    </g>
+
+    <!-- Right Monitor / Board -->
+    <g transform="translate(330, 45)">
+      <rect x="0" y="10" width="80" height="60" rx="6" fill="#FFFFFF" stroke="#8A282B" stroke-width="2"/>
+      <line x1="15" y1="28" x2="65" y2="28" stroke="#8A282B" stroke-width="2"/>
+      <line x1="15" y1="40" x2="55" y2="40" stroke="#AA771C" stroke-width="2"/>
+      <line x1="15" y1="52" x2="45" y2="52" stroke="#7A6855" stroke-width="2"/>
+      <rect x="36" y="70" width="8" height="20" fill="#8A282B"/>
+      <rect x="25" y="90" width="30" height="6" rx="2" fill="#7A6855"/>
+    </g>
+  </g>
+
+  <!-- Title Bottom Banner -->
+  <text x="400" y="380" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="800" fill="#2C2724" text-anchor="middle">
+    CESA 24-Hour National Hackathon
+  </text>
+  <text x="400" y="402" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="500" fill="#786B60" text-anchor="middle">
+    Department of Computer Engineering • Godavari College of Engineering, Jalgaon
+  </text>
+</svg>

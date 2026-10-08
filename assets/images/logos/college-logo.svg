@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="collegeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2BA49"/>
+      <stop offset="60%" stop-color="#B8860B"/>
+      <stop offset="100%" stop-color="#7B5604"/>
+    </linearGradient>
+    <linearGradient id="collegeNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D4059"/>
+      <stop offset="50%" stop-color="#1F2E42"/>
+      <stop offset="100%" stop-color="#141E2C"/>
+    </linearGradient>
+    <linearGradient id="collegeBeigeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F5F0E6"/>
+    </linearGradient>
+    <filter id="collegeDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#3A2D22" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Circle -->
+  <circle cx="150" cy="150" r="140" fill="url(#collegeBeigeBg)" stroke="url(#collegeGold)" stroke-width="4" filter="url(#collegeDropShadow)"/>
+  <circle cx="150" cy="150" r="132" fill="none" stroke="#8A282B" stroke-width="1.5"/>
+
+  <!-- Concentric Inner Circle for Circular Text -->
+  <circle cx="150" cy="150" r="114" fill="#FAF7F0" stroke="url(#collegeGold)" stroke-width="2"/>
+
+  <!-- Text Paths -->
+  <path id="collegeTextTop" d="M 40,150 A 110,110 0 0,1 260,150" fill="none"/>
+  <path id="collegeTextBottom" d="M 260,150 A 110,110 0 0,1 40,150" fill="none"/>
+
+  <text font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="10.5" font-weight="700" fill="#1F2E42" letter-spacing="2.2">
+    <textPath href="#collegeTextTop" startOffset="50%" text-anchor="middle">
+      GODAVARI COLLEGE OF ENGINEERING
+    </textPath>
+  </text>
+  
+  <text font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#8A282B" letter-spacing="3.5">
+    <textPath href="#collegeTextBottom" startOffset="50%" text-anchor="middle">
+      ★ JALGAON • ESTD 1999 ★
+    </textPath>
+  </text>
+
+  <!-- Inner Crest -->
+  <circle cx="150" cy="150" r="82" fill="url(#collegeNavy)" stroke="url(#collegeGold)" stroke-width="3"/>
+  <circle cx="150" cy="150" r="77" fill="none" stroke="#EFEAE1" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!-- Academic Torch of Knowledge / Wisdom Flame -->
+  <path d="M 150,92 C 144,105 142,112 145,119 C 147,123 150,126 150,126 C 150,126 153,123 155,119 C 158,112 156,105 150,92 Z" fill="url(#collegeGold)"/>
+  <path d="M 150,101 C 147,108 146,112 148,116 C 149,118 150,120 150,120 C 150,120 151,118 152,116 C 154,112 153,108 150,101 Z" fill="#FDFBF7"/>
+
+  <!-- Torch Handle / Stand -->
+  <rect x="146" y="125" width="8" height="14" rx="2" fill="url(#collegeGold)"/>
+  <polygon points="144,139 156,139 153,145 147,145" fill="url(#collegeGold)"/>
+
+  <!-- Engineering Cogwheel / Gear -->
+  <g transform="translate(150, 162) scale(0.68)">
+    <circle cx="0" cy="0" r="32" fill="none" stroke="url(#collegeGold)" stroke-width="6"/>
+    <circle cx="0" cy="0" r="14" fill="#FAF6EE"/>
+    <circle cx="0" cy="0" r="8" fill="#1F2E42"/>
+    <!-- Gear teeth -->
+    <rect x="-4" y="-38" width="8" height="10" fill="url(#collegeGold)" rx="2"/>
+    <rect x="-4" y="28" width="8" height="10" fill="url(#collegeGold)" rx="2"/>
+    <rect x="-38" y="-4" width="10" height="8" fill="url(#collegeGold)" rx="2"/>
+    <rect x="28" y="-4" width="10" height="8" fill="url(#collegeGold)" rx="2"/>
+    <rect x="-26" y="-26" width="8" height="10" fill="url(#collegeGold)" rx="2" transform="rotate(45)"/>
+    <rect x="18" y="18" width="8" height="10" fill="url(#collegeGold)" rx="2" transform="rotate(45)"/>
+    <rect x="-26" y="18" width="8" height="10" fill="url(#collegeGold)" rx="2" transform="rotate(-45)"/>
+    <rect x="18" y="-26" width="8" height="10" fill="url(#collegeGold)" rx="2" transform="rotate(-45)"/>
+  </g>
+
+  <!-- Open Book of Knowledge -->
+  <path d="M 125,190 Q 150,184 150,195 Q 150,184 175,190 L 175,200 Q 150,194 150,205 Q 150,194 125,200 Z" fill="#FAF6EE" stroke="url(#collegeGold)" stroke-width="1.5"/>
+  <line x1="150" y1="195" x2="150" y2="205" stroke="url(#collegeGold)" stroke-width="1.5"/>
+
+  <!-- Ribbon Banner at Bottom -->
+  <path d="M 112,216 Q 150,222 188,216 L 192,226 Q 150,233 108,226 Z" fill="#8A282B" stroke="url(#collegeGold)" stroke-width="1"/>
+  <text x="150" y="225" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="6.5" font-weight="700" fill="#FAF6EE" text-anchor="middle" letter-spacing="1.5">
+    GODAVARI FOUNDATION
+  </text>
+</svg>

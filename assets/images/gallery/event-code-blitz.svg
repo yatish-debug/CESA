@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF6"/>
+      <stop offset="100%" stop-color="#EAE3D4"/>
+    </linearGradient>
+    <linearGradient id="cbGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA771C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#cbBg)"/>
+  
+  <rect x="100" y="70" width="600" height="360" rx="20" fill="#FFFFFF" stroke="#E2DACD" stroke-width="2"/>
+
+  <!-- Code Blitz: Stopwatch, Lightning bolt, Terminal window in warm aesthetic -->
+  <g transform="translate(240, 105)">
+    <!-- Terminal window -->
+    <rect x="0" y="15" width="320" height="190" rx="10" fill="#F8F4ED" stroke="#8A282B" stroke-width="2.5"/>
+    <rect x="0" y="15" width="320" height="32" rx="10" fill="#8A282B"/>
+    <circle cx="18" cy="31" r="5" fill="#E8DEC8"/>
+    <circle cx="34" cy="31" r="5" fill="#E8DEC8"/>
+    <circle cx="50" cy="31" r="5" fill="#E8DEC8"/>
+    <text x="160" y="36" font-family="monospace" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">terminal:~/code-blitz-arena$</text>
+
+    <!-- Code text -->
+    <text x="25" y="75" font-family="monospace" font-size="13" font-weight="700" fill="#8A282B">&gt; int main() {</text>
+    <text x="45" y="100" font-family="monospace" font-size="13" font-weight="600" fill="#5E4E3E">fast_io();</text>
+    <text x="45" y="125" font-family="monospace" font-size="13" font-weight="600" fill="#C59B27">solve_dsa_problem();</text>
+    <text x="45" y="150" font-family="monospace" font-size="13" font-weight="600" fill="#4B6B48">return ACCEPTED; // 0.02s</text>
+    <text x="25" y="175" font-family="monospace" font-size="13" font-weight="700" fill="#8A282B">}</text>
+
+    <!-- Lightning Bolt of Speed -->
+    <polygon points="255,80 230,125 248,125 235,175 275,115 255,115" fill="url(#cbGold)" stroke="#8A282B" stroke-width="1.5"/>
+  </g>
+
+  <!-- Title Bottom Banner -->
+  <text x="400" y="365" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="800" fill="#2C2724" text-anchor="middle">
+    Code-Blitz: Speed Programming Championship
+  </text>
+  <text x="400" y="392" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="500" fill="#786B60" text-anchor="middle">
+    Algorithmic Sprint, Data Structures & Logic Arena • CESA Computer Labs
+  </text>
+</svg>

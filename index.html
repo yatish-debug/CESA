@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CESA | Computer Engineering Student Association - Godavari College of Engineering, Jalgaon</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Official website of the Computer Engineering Student Association (CESA), Godavari College of Engineering, Jalgaon. Showcasing our 25-member council, event photo gallery, workshops, technical symposiums, and student initiatives.">
+  <meta name="keywords" content="CESA, Computer Engineering Student Association, Godavari College of Engineering Jalgaon, GCOEJ, Photo Gallery, Technical Events, Jalgaon Engineering">
+  <meta name="author" content="CESA Web Development Team">
+
+  <!-- Google Fonts: Plus Jakarta Sans for clean readability, Cinzel for academic prestige -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet (Warm White & Beige Academic Theme Aligned With Logos) -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="icon" type="image/png" href="assets/images/logos/cesa-logo.png">
+</head>
+<body>
+
+  <!-- Main Sticky Navigation Header (Dual Logo Display) -->
+
+  <!-- 2. Main Sticky Navigation Header (Dual Logo Display) -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      
+      <!-- Dual Logos & Department Branding -->
+      <a href="#home" class="brand-group" aria-label="CESA and College Home">
+        <div class="brand-logos">
+          <!-- Godavari College Logo -->
+          <div class="logo-wrapper" title="Godavari College of Engineering, Jalgaon Logo">
+            <img 
+              src="assets/images/logos/college-logo.png" 
+              alt="Godavari College of Engineering Logo" 
+              class="logo-img college-logo-target"
+              onerror="this.onerror=null; this.src='assets/images/logos/college-logo.svg';"
+            />
+          </div>
+
+          <div class="brand-divider"></div>
+
+          <!-- CESA Logo -->
+          <div class="logo-wrapper" title="CESA Logo">
+            <img 
+              src="assets/images/logos/cesa-logo.png" 
+              alt="Computer Engineering Student Association Logo" 
+              class="logo-img cesa-logo-target"
+              onerror="this.onerror=null; this.src='assets/images/logos/cesa-logo.svg';"
+            />
+          </div>
+        </div>
+
+        <div class="brand-info">
+          <span class="brand-title">CESA</span>
+          <span class="brand-dept">Department of Computer Engineering</span>
+          <span class="brand-college">Godavari College of Engineering, Jalgaon</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#gallery" class="nav-link">Photo Gallery</a>
+        <a href="#members" class="nav-link">Members (25)</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <a href="#gallery" class="btn-header">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+          View Gallery
+        </a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <div class="brand-info">
+        <span class="brand-title">CESA GCOEJ</span>
+        <span class="brand-college">Godavari College of Engineering</span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About CESA</a>
+      <a href="#gallery">Photo Gallery</a>
+      <a href="#members">Council Members (25)</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </aside>
+
+  <!-- 3. Announcement / Notice Marquee -->
+  <div class="notice-ticker" aria-label="Latest Announcements">
+    <div class="container ticker-inner">
+      <span class="ticker-label">★ CESA Update</span>
+      <div class="ticker-marquee">
+        <span class="ticker-content">
+          Welcome to Computer Engineering Student Association (CESA) • Council 2026-27 Announced (President: Dinkky Shadani) • Explore the Event Photo Gallery below • Upcoming: Annual National Tech-Symposium, Workshops &amp; Coding League!
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Hero Section (Home) -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      
+      <!-- Hero Content Column -->
+      <div class="hero-content">
+        <div class="hero-pill">
+          <span class="hero-pill-dot"></span>
+          Official Student Association • Estd. 1999
+        </div>
+
+        <h1 class="hero-title">
+          Empowering Tomorrow's <span class="highlight-navy">Computer Engineers</span> &amp; <span class="highlight-blue">Innovators</span>
+        </h1>
+
+        <p class="hero-description">
+          Welcome to the official portal of <strong>CESA (Computer Engineering Student Association)</strong> at <strong>Godavari College of Engineering, Jalgaon</strong>. A collaborative community driving technical excellence, national hackathons, cultural festivals, and student empowerment.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#gallery" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+            Explore Photo Gallery
+          </a>
+          <a href="#members" class="btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            Meet the 25 Members
+          </a>
+        </div>
+
+        <!-- Quick Numerical Highlights -->
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <span class="stat-number">25</span>
+            <span class="stat-title">Council Members</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-title">Enrolled Students</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">20+</span>
+            <span class="stat-title">Annual Events</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-title">Student Leadership</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase Column -->
+      <div class="hero-visual">
+        <div class="hero-crest-card">
+          <div class="crest-dual-showcase">
+            <div class="crest-circle" title="Godavari College of Engineering, Jalgaon">
+              <img 
+                src="assets/images/logos/college-logo.png" 
+                alt="Godavari College of Engineering Logo" 
+                class="college-logo-target"
+                onerror="this.onerror=null; this.src='assets/images/logos/college-logo.svg';"
+              />
+            </div>
+            <span class="crest-connect-icon">✦</span>
+            <div class="crest-circle" title="Computer Engineering Student Association">
+              <img 
+                src="assets/images/logos/cesa-logo.png" 
+                alt="CESA Official Logo" 
+                class="cesa-logo-target"
+                onerror="this.onerror=null; this.src='assets/images/logos/cesa-logo.svg';"
+              />
+            </div>
+          </div>
+
+          <div class="hero-crest-info">
+            <h3>Department of Computer Engineering</h3>
+            <p class="affiliation-text">Godavari Foundation's Godavari College of Engineering, Jalgaon</p>
+            <div class="council-badge-pill">
+              Council Session: <strong>2026 - 2027</strong> • 25 Portfolios
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Info Tag -->
+        <div class="hero-floating-card">
+          <div class="floating-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="floating-text-title">Student Led • Faculty Guided</div>
+            <div class="floating-text-sub">Fostering innovation in Jalgaon, MH</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. About CESA Section -->
+  <section class="section section-bg-beige" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Our Association</span>
+        <h2 class="section-title">Cultivating Technical Acumen &amp; <span>Leadership</span></h2>
+        <p class="section-subtitle">
+          The Computer Engineering Student Association (CESA) represents the collective ambition and creativity of computer engineers at Godavari College of Engineering, Jalgaon.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Fostering A Culture Of Innovation</h3>
+          <p class="about-lead">
+            CESA acts as the active bridge between classroom academic curriculum and practical industry standards.
+          </p>
+          <p>
+            Organized entirely by students under the guidance of our Head of Department and faculty mentors, CESA provides a collaborative platform where every student can cultivate coding competence, event management abilities, public communication skills, and collective teamwork.
+          </p>
+          <p>
+            From intensive 24-hour hackathons and industrial field tours to our signature cultural gatherings and sports leagues, CESA ensures that every computer engineering undergraduate experiences comprehensive, holistic growth throughout their academic journey.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+            <a href="#members" class="btn-primary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">
+              Meet Our 25 Council Members
+            </a>
+            <a href="#gallery" class="btn-secondary" style="padding: 0.65rem 1.4rem; font-size: 0.9rem;">
+              View Event Archives
+            </a>
+          </div>
+        </div>
+
+        <!-- Vision & Mission Cards -->
+        <div class="vision-mission-grid">
+          <div class="vm-box">
+            <div class="vm-box-header">
+              <div class="vm-icon">🎯</div>
+              <h4>Our Vision</h4>
+            </div>
+            <p>
+              To nurture technically competent, innovative, and ethically grounded computer engineers capable of solving complex societal challenges and leading modern technological transformations.
+            </p>
+          </div>
+
+          <div class="vm-box mission-box">
+            <div class="vm-box-header">
+              <div class="vm-icon">🚀</div>
+              <h4>Our Mission</h4>
+            </div>
+            <p>
+              To deliver practical learning experiences through peer mentoring, hands-on workshops, state-level hackathons, industry collaborations, and holistic co-curricular events throughout the academic year.
+            </p>
+          </div>
+
+          <div class="vm-box">
+            <div class="vm-box-header">
+              <div class="vm-icon">🤝</div>
+              <h4>Core Association Pillars</h4>
+            </div>
+            <p>
+              Technical Excellence • Teamwork &amp; Integrity • Continuous Innovation • Inclusive Community Spirit
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Event Photo Gallery Section -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Memories &amp; Milestones</span>
+        <h2 class="section-title">Event <span>Photo Gallery</span></h2>
+        <p class="section-subtitle">
+          Capturing moments from our technical symposiums, coding competitions, expert masterclasses, cultural evenings, and departmental celebrations.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="gallery-filter-wrap">
+        <button class="filter-btn active" data-filter="all">All Events</button>
+        <button class="filter-btn" data-filter="technical">Technical &amp; Coding</button>
+        <button class="filter-btn" data-filter="workshops">Workshops &amp; Seminars</button>
+        <button class="filter-btn" data-filter="cultural">Cultural &amp; Celebrations</button>
+        <button class="filter-btn" data-filter="sports">Sports &amp; Athletics</button>
+      </div>
+
+      <!-- Interactive Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Gallery cards populated by JavaScript -->
+      </div>
+
+      <!-- Instructions Box for adding real photos -->
+      <div class="gallery-notice-box">
+        <div class="gallery-notice-text">
+          <h4>📷 Want to add new event photographs?</h4>
+          <p>Drop image files into <code>assets/images/gallery/</code> and list them in <code>js/data.js</code>.</p>
+        </div>
+        <a href="#contact" class="btn-secondary" style="font-size: 0.875rem; padding: 0.6rem 1.25rem;">
+          Contact Gallery Coordinator
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. Members Section (Exact 25 Council Members Sequence) -->
+  <section class="section members-section" id="members">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Council 2026 - 2027</span>
+        <h2 class="section-title">Our Dedicated <span>Council Members</span></h2>
+        <p class="section-subtitle">
+          Meet the 25 student leaders shaping the Computer Engineering Student Association at Godavari College of Engineering, Jalgaon.
+        </p>
+      </div>
+
+      <!-- Hierarchy Sequence Explainer Banner -->
+      <div class="sequence-info-banner">
+        <div class="seq-info-left">
+          <span class="seq-info-icon">🏛️</span>
+          <div class="seq-info-text">
+            <strong>Official Hierarchy Sequence:</strong> 
+            President (#1) &rarr; Vice Presidents (3) &rarr; Secretary &rarr; Joint Secretary &rarr; Chief Advisor &rarr; Advisor &rarr; Cultural Secretary &rarr; Joint Cultural Secretary &rarr; Treasurer &rarr; Joint Treasurer &rarr; Sports Co-ordinator &rarr; Discipline Heads (2) &rarr; SY Co-ordinators (10)
+          </div>
+        </div>
+        <div class="seq-count-badge">
+          Total Strength: <strong>25 Members</strong>
+        </div>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="member-filters">
+        <button class="member-filter-btn active" data-filter="all">All Members (25)</button>
+        <button class="member-filter-btn" data-filter="executive">Executive Heads (President &amp; 3 VPs)</button>
+        <button class="member-filter-btn" data-filter="secretariat-advisory">Secretariat &amp; Advisors</button>
+        <button class="member-filter-btn" data-filter="wings-and-heads">Wings &amp; Heads (Cultural, Finance, Sports, Discipline)</button>
+        <button class="member-filter-btn" data-filter="sy-coordinators">SY Co-ordinators (10)</button>
+      </div>
+
+      <!-- Members Grid (Populated dynamically via js/main.js in exact sequence 1 to 25) -->
+      <div class="members-grid" id="membersGrid">
+        <!-- 25 member cards loaded by JavaScript -->
+      </div>
+
+      <!-- Photo upload notice for user -->
+      <div class="gallery-notice-box" style="margin-top: 3rem; background: #FFFFFF;">
+        <div class="gallery-notice-text">
+          <h4>👤 Member Photos:</h4>
+          <p>Place student photos named <code>member-1.jpg</code> to <code>member-25.jpg</code> into <code>assets/images/members/</code>. The website automatically loads them over the default initials badges!</p>
+        </div>
+        <a href="#contact" class="btn-secondary" style="font-size: 0.875rem; padding: 0.6rem 1.25rem;">
+          Update Member Contacts
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. Contact Us Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Connect with <span>CESA Council</span></h2>
+        <p class="section-subtitle">
+          Have an inquiry regarding upcoming workshops, registrations, sponsorships, or photo submissions? Reach out to our student body or visit our department in Jalgaon.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Information Card -->
+        <div class="contact-info-card">
+          <h3>Department Information</h3>
+          <p class="contact-desc">
+            We are based in the Department of Computer Engineering at Godavari College of Engineering, Jalgaon. Feel free to contact our council leaders or visit us during college working hours.
+          </p>
+
+          <div class="contact-items-list">
+            
+            <div class="contact-row">
+              <div class="contact-row-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="contact-row-content">
+                <h5>College Campus Address</h5>
+                <p>
+                  Godavari Foundation's Godavari College of Engineering,<br>
+                  P-51, Additional M.I.D.C., Near Bharat Petroleum,<br>
+                  Jalgaon, Maharashtra - 425003, India
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-row-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="contact-row-content">
+                <h5>Email Correspondence</h5>
+                <p>
+                  CESA Official: <a href="mailto:cesa.gcoej@gmail.com">cesa.gcoej@gmail.com</a><br>
+                  Principal Office: <a href="mailto:principal@godavariengg.ac.in">principal@godavariengg.ac.in</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-row-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="contact-row-content">
+                <h5>Contact Helpline</h5>
+                <p>
+                  College Reception: +91 257 2212999 / 2213500<br>
+                  Hours: Mon – Sat (9:30 AM – 5:30 PM)
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Social links -->
+          <div class="contact-socials-box">
+            <h5>Connect on Social Platforms</h5>
+            <div class="contact-social-pills">
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="social-pill">
+                Instagram
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-pill">
+                LinkedIn
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="social-pill">
+                GitHub CESA
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener" class="social-pill">
+                YouTube
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact & Inquiry Form -->
+        <div class="contact-form-card">
+          <h3>Send A Message to CESA</h3>
+          <p>Fill out the form below and our council secretaries will respond promptly.</p>
+
+          <form id="cesaContactForm">
+            <div class="form-grid">
+              
+              <div class="form-group">
+                <label for="userName" class="form-label">Full Name <span class="req">*</span></label>
+                <input type="text" id="userName" name="name" class="form-control" placeholder="e.g. Rahul Patil" required>
+              </div>
+
+              <div class="form-group">
+                <label for="userEmail" class="form-label">Email Address <span class="req">*</span></label>
+                <input type="email" id="userEmail" name="email" class="form-control" placeholder="e.g. rahul@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="userCategory" class="form-label">You Are A</label>
+                <select id="userCategory" name="category" class="form-control">
+                  <option value="student">Current Student (Computer Engg)</option>
+                  <option value="other-student">Student (Other Department)</option>
+                  <option value="alumni">GCOEJ Alumni</option>
+                  <option value="faculty">Faculty / Guest</option>
+                  <option value="industry">Industry Sponsor / Recruiter</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="userSubject" class="form-label">Subject</label>
+                <input type="text" id="userSubject" name="subject" class="form-control" placeholder="e.g. Event Registration / Query">
+              </div>
+
+              <div class="form-group full-width">
+                <label for="userMessage" class="form-label">Message / Feedback <span class="req">*</span></label>
+                <textarea id="userMessage" name="message" class="form-control" placeholder="Write your question, feedback, or event suggestions..." required></textarea>
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              Send Message to Council
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Interactive Gallery Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Event Photo Lightbox">
+    <button class="lightbox-nav-btn lightbox-prev" id="lightboxPrev" aria-label="Previous photo">&#10094;</button>
+    <button class="lightbox-nav-btn lightbox-next" id="lightboxNext" aria-label="Next photo">&#10095;</button>
+    
+    <div class="lightbox-content">
+      <div class="lightbox-header">
+        <h4 class="lightbox-title" id="lightboxTitle">Event Title</h4>
+        <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close photo view">&times;</button>
+      </div>
+
+      <div class="lightbox-media">
+        <img src="" alt="" id="lightboxImg" class="lightbox-img">
+      </div>
+
+      <div class="lightbox-footer">
+        <p class="lightbox-desc" id="lightboxDesc"></p>
+        <div class="lightbox-meta-info" id="lightboxMeta"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <h4>CESA • GCOE JALGAON</h4>
+          <p class="footer-sub">Computer Engineering Student Association</p>
+          <p class="footer-about">
+            The representative association of computer engineering scholars at Godavari Foundation's Godavari College of Engineering, Jalgaon. Striving for technical prominence, collaborative ethics, and student welfare.
+          </p>
+          <div style="font-size: 0.8125rem; color: var(--accent-blue-border);">
+            ★ Estd. 1999 • DBATU / KBCNMU Affiliated
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h5>Quick Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About CESA</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#members">Council Members (25)</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Key Activities -->
+        <div class="footer-col">
+          <h5>Key Initiatives</h5>
+          <ul class="footer-links">
+            <li><a href="#gallery">Annual Tech-Symposium</a></li>
+            <li><a href="#gallery">Coding Competitions</a></li>
+            <li><a href="#gallery">Industry Expert Masterclasses</a></li>
+            <li><a href="#gallery">Cultural Gathering &amp; Fests</a></li>
+            <li><a href="#gallery">Departmental Sports League</a></li>
+          </ul>
+        </div>
+
+        <!-- College Address -->
+        <div class="footer-col">
+          <h5>Campus Address</h5>
+          <p style="font-size: 0.875rem; color: #ACB5C0; line-height: 1.6; margin-bottom: 0.75rem;">
+            P-51, Addl. M.I.D.C., Near Bharat Petroleum,<br>
+            Jalgaon, Maharashtra - 425003
+          </p>
+          <p style="font-size: 0.875rem; color: #ACB5C0; line-height: 1.6;">
+            Email: <a href="mailto:cesa.gcoej@gmail.com" style="color: var(--accent-blue-border);">cesa.gcoej@gmail.com</a><br>
+            Tel: +91 257 2212999
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026-2027 <strong>CESA - Computer Engineering Student Association</strong>. Godavari College of Engineering, Jalgaon. All rights reserved.
+        </div>
+        <div>
+          Designed for <strong>Department of Computer Engineering, GF's GCOEJ</strong>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
